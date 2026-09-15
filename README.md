@@ -9,7 +9,9 @@ Most tools hide that choice behind a preset. This one puts it on a slider, tells
 you the resolution you bought with it, and then lets you point the same machinery
 at a second file to see exactly what a plugin, a filter, or a bounce changed.
 
-![Main view](docs/main-view.png)
+![The Compare page](docs/app-compare.png)
+
+*The Compare page. Everything below is output from this tool.*
 
 ## Why this exists
 
@@ -43,6 +45,9 @@ a magnifying glass. It will not tell you whether a change was good.
 Same audio, same dynamic range, only the window changed.
 
 ![Window tradeoff](docs/window-tradeoff.png)
+
+*Two separate runs stacked for comparison — the app shows one at a time. Generated
+by `make_figures.py`.*
 
 At `n_fft=512` every transient is a hard vertical edge and the harmonics are
 smeared into mush. At `n_fft=8192` the harmonic stack resolves into clean bands
@@ -83,6 +88,11 @@ time resolution: 11.6 ms/frame
 ## Compare — the part worth having
 
 ![Compare and difference](docs/compare-diff.png)
+
+The difference panel in use on a real track — a full mix against its isolated lead
+vocal:
+
+![Difference panel in the app](docs/app-difference.png)
 
 Load the original into **A** and the processed version into **B**. Both are
 analyzed with identical parameters against **one shared dB reference**, then the
