@@ -1,0 +1,19 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# audio you drop in to analyze — keep unreleased material out of the repo
+*.wav
+*.mp3
+*.flac
+*.m4a
+*.aiff
+!docs/demo.wav
+!docs/demo_processed.wav
+
+# exported renders
+*.npy
+*.npz
+/*.png
+!docs/*.png
